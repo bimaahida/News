@@ -1,3 +1,7 @@
 import newsRoutes from "./news/router";
+import defaultRouters from "./default/router";
 
-export default [...newsRoutes];
+export default [
+    ...defaultRouters,
+    ...newsRoutes
+];

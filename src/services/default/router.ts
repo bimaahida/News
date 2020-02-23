@@ -1,13 +1,12 @@
 import { Request, Response } from "express";
-import { getPlacesByName } from "./NewsController";
 
 export default [
     {
-        path: "/api/v1/news",
+        path: "",
         method: "get",
         handler: [
             async ({query}: Request, res: Response) => {
-                const result = await getPlacesByName(query.q);
+                const result = "Welcome To Api Mkoran";
                 res.status(200).send(result);
             }
         ]

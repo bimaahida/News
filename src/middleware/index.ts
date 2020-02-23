@@ -4,4 +4,6 @@ import {
     handleCompression
 } from "./common";
 
-export default [handleCors, handleBodyRequestParsing, handleCompression];
+import { handleAPIDocs } from "./swaggerDocs";
+
+export default [handleCors, handleBodyRequestParsing, handleCompression, handleAPIDocs];
